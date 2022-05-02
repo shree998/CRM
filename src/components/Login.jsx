@@ -1,6 +1,6 @@
 import "../assets/Login.css"
 import React from "react";
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 const signUpButton = () => {
@@ -15,7 +15,7 @@ const signInButton = () => {
 
 // JSX code for login form
 const Login = ()=> {
-    let history = useHistory();
+    let history = useNavigate();
     return(
     <div className="container" id="container">
         <div className="form-container sign-up-container">
